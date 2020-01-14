@@ -1,0 +1,64 @@
+<!-- (CC-NC-BY) KimDongHae 2019-->
+<html>
+
+<head>
+<title>Blending</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<script type="text/javascript" src="trCube
+.js">
+</script>
+</head>
+
+<body onload="main()">
+    <canvas id="helloapicanvas" style="border: none;" width="400" height="400"></canvas>
+	<br>
+	<p>translation</p>
+	<button onclick="trXinc()">Translate X + 0.01</button>
+	<!-- x축으로 얼마나 이동했는지. -->
+	<button onclick="trYinc()">Translate Y + 0.01</button>
+	<!-- y축으로 얼마나 이동했는지-->
+	<button onclick="trZinc()">Translate Z + 0.01</button>
+	<!-- z축으로 얼마나 이동했는지-->
+	<br>
+	<button onclick="tr_Xinc()">Translate X - 0.01</button>
+	<!-- x축으로 얼마나 이동했는지. -->
+	<button onclick="tr_Yinc()">Translate Y - 0.01</button>
+	<!-- y축으로 얼마나 이동했는지-->
+	<button onclick="tr_Zinc()">Translate Z - 0.01</button>
+	<!-- z축으로 얼마나 이동했는지-->
+
+	<p>Blending On/OFF</p>
+	<button onclick="Blending_on()">Blending On</button>
+	<button onclick="Blending_off()">Blending Off</button>
+	<br>
+	<!-- blending 기능을 사용할 지 안할지 결정하는 버튼이다. -->
+
+	<p>BlendFunc</p>
+	<button onclick="blend_SRC_ALPHA()">SRC_ALPHA</button>
+	<button onclick="blend_SRC_COLOR()">SRC_COLOR</button>
+	<button onclick="blend_DST_COLOR()">DST_COLOR</button>
+	<button onclick="blend_DST_ALPHA()">DST_ALTPA</button>
+	<button onclick="blend_ZERO()">DST_ZERO</button>
+	<!-- BlendFunc 기능을 가 버튼이다.  -->
+	<br>
+	<p>BlendEquation</p>
+	<button onclick="blend_FUNC_ADD()">FUNC_ADD</button>
+	<button onclick="blend_FUNC_SUB()">FUNC_SUB</button>
+	<button onclick="blend_FUNC_REV()">FUNC_REV</button>
+	<!-- BlendEquation 기능을 가진 버튼들이다. -->
+	<br>
+	<br>
+	<table border=1> 
+	<tr> 
+	<td id="matrix0"> 	<td id="matrix4">  	<td id="matrix8">  	<td id="matrix12"> 
+	<tr> 
+	<td id="matrix1"> 	<td id="matrix5">  	<td id="matrix9">  	<td id="matrix13"> 
+	<tr> 
+	<td id="matrix2"> 	<td id="matrix6">  	<td id="matrix10">  <td id="matrix14"> 
+	<tr> 
+	<td id="matrix3"> 	<td id="matrix7">  	<td id="matrix11">  <td id="matrix15"> 
+	</table>
+</body>
+
+</html>

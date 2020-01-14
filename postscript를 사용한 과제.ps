@@ -1,0 +1,106 @@
+/box
+{
+0 0 moveto
+0 0 rlineto
+0 10 rlineto
+10 0 rlineto
+closepath
+fill
+}def
+
+/box1
+{
+0 0 moveto
+0 0 rlineto
+0 150 rlineto
+280 0 rlineto
+ 0 -150 rlineto
+ 2 setlinewidth
+closepath
+stroke
+} def
+
+/box2
+{
+/Times-Roman findfont
+18 scalefont
+setfont
+107 90 moveto
+(Postscript Programmer) show
+/Times-Roman findfont
+13 scalefont
+setfont
+147 75 moveto
+(Kim Dong Hae) show
+} def
+
+/box3
+{
+20 10 translate
+1.25 1.25 scale
+0 10 40 {5 5 translate 72 rotate box} for
+} def
+
+/box4
+{
+0 50 moveto
+0 0 40 20 60 100 rcurveto
+stroke
+} def
+/box5
+{
+0 0 moveto
+0 0 50 30 100 0 rcurveto
+0.9 setgray
+fill
+100 0 moveto
+0 0 50 80 90 0 rcurveto
+0.7 setgray
+fill
+190 0 moveto
+0 0 50 130 90 0 rcurveto
+0.2 setgray
+fill
+} def
+/box6
+{
+0 0 moveto
+0 0 90 20 120 150 rcurveto
+stroke
+} def
+
+
+/nameCard
+{
+10 10 translate
+box2 %Text file
+box1 %Namecard
+box4 
+box5
+box6
+0 10 20 {dup translate 10 rotate 0.7 setgray box3} for
+} def
+
+gsave
+nameCard
+grestore
+gsave
+300 0 translate
+nameCard
+grestore
+gsave
+0 200 translate
+nameCard
+grestore
+gsave
+300 200 translate 
+nameCard
+grestore
+gsave
+0 400 translate
+nameCard
+grestore
+gsave
+300 400 translate
+nameCard
+showpage
